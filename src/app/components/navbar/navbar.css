@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  background: #ffffff;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 8px 2px;
+  background: #ffffff;
+}
+
+.nav-item {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  color: #24384d;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background: #3476e5;
+  border-color: #3476e5;
+  color: #ffffff;
+}
+
+.nav-item:focus-visible {
+  outline: 2px solid #163f78;
+  outline-offset: 2px;
+}

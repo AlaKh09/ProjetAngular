@@ -1,0 +1,67 @@
+:host {
+  display: block;
+}
+
+.notif-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 104px;
+  padding: 15px 16px;
+}
+
+.section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 50%;
+  font-size: 1.05rem;
+}
+
+.notifications-icon {
+  margin-top: 2px;
+  background: #fff4dc;
+}
+
+.notifications-content {
+  min-width: 0;
+}
+
+.notif-card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #234365;
+}
+
+.notif-card p {
+  margin: 0 0 10px;
+  color: #566174;
+  font-size: 0.7rem;
+}
+
+.notif-btn {
+  display: inline-block;
+  border: 1px solid #c7d2dd;
+  background: #f7f7f7;
+  color: #2b3d52;
+  padding: 3px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.62rem;
+  color: #24384d;
+}
+
+.notif-btn:hover {
+  background: #eaf2fb;
+}
+
+.notification-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #566174;
+  font-size: 0.68rem;
+}

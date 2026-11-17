@@ -1,0 +1,21 @@
+<section class="friends-card">
+  <div class="section-icon friends-icon" aria-hidden="true">👥</div>
+  <div class="friends-content">
+    <h3>Liste des amis</h3>
+    <div class="friend-editors" aria-label="Modifier les noms des amis">
+      <input
+        *ngFor="let friend of friends; let i = index"
+        [hidden]="i > 2"
+        type="text"
+        [attr.aria-label]="'Nom de l’ami ' + (i + 1)"
+        [(ngModel)]="friend.name"
+      />
+    </div>
+    <ul class="friend-list">
+      <li *ngFor="let friend of friends">
+        <span class="friend-name">{{ friend.name }}</span>
+        <span class="friend-email"> - {{ friend.email }}</span>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+.site-footer {
+  background: linear-gradient(180deg, #0d3d5f 0%, #0a2d4a 100%);
+  color: #eaf5ff;
+  text-align: center;
+  padding: 12px 18px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}

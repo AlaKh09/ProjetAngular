@@ -1,0 +1,52 @@
+:host {
+  display: block;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 108px;
+  padding: 15px 16px;
+}
+
+.profile-card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: #234365;
+}
+
+.section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 50%;
+  font-size: 1.05rem;
+}
+
+.profile-icon {
+  background: #eaf3ff;
+}
+
+.profile-content {
+  min-width: 0;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-text p {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #1f2937;
+}
+
+.profile-text strong {
+  color: #26394d;
+}

@@ -1,0 +1,18 @@
+<section class="notif-card">
+  <div class="section-icon notifications-icon" aria-hidden="true">🔔</div>
+  <div class="notifications-content">
+    <h3>Zone de notifications</h3>
+    <p>Vous avez {{ notifications.length }} nouvelles notifications.</p>
+    <button
+      type="button"
+      class="notif-btn"
+      [attr.aria-expanded]="showNotifications"
+      (click)="showNotifications = !showNotifications"
+    >
+      {{ showNotifications ? 'Masquer les notifications' : 'Afficher les notifications' }}
+    </button>
+    <ul *ngIf="showNotifications" class="notification-list">
+      <li *ngFor="let notification of notifications">{{ notification }}</li>
+    </ul>
+  </div>
+</section>
